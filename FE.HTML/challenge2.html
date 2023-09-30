@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+            padding-left: 20px;
+        }
+        thead td{
+            text-align: center;
+        }
+
+        td{
+            width: 10%;
+        }
+
+        .top{
+            vertical-align: top;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table width="40%">
+        <colgroup>
+            <col span="2" style="background-color: aqua ;">
+            <col span="2" style="background-color: rgba(255, 255, 0, 0.699);">
+        </colgroup>
+
+        <thead>
+            <tr style="background-color: white;">
+                <td colspan="2">Person</td>
+                <td colspan="2">Department</td>
+            </tr>
+        </thead>
+    <!-- end thead -->
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td rowspan="4" class="top">Photo</td>
+                <td>Name</td>
+                <td rowspan="2"class="top">Image</td>
+            </tr>
+            <tr>
+                <td>Surname</td>
+                <td>Structure</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>Floor</td>
+                <td rowspan="2" class="top">QR code</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>Room</td>
+            </tr>
+        </tbody>
+    <!-- end tbody -->
+        <tfoot>
+            <tr style="background-color: white;">
+                <td colspan="2">E-mail</td>
+                <td colspan="2">Tel.number</td>
+            </tr>
+        </tfoot>
+    <!-- end tfoot -->
+    </table>   
+</body>
+</html>
